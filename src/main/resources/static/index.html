@@ -2,7 +2,6 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
     <title>LOVE喵「七夕情人节」</title>
 
     <link type="text/css" rel="stylesheet" href="ml/default.css">
@@ -173,7 +172,6 @@
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
 
-            // 会有闪烁不得意这样做, (＞﹏＜)
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
             canvas.css("background", "#ffe");
             $await(Jscex.Async.sleep(300));
@@ -192,11 +190,11 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
             var together = new Date();
-            together.setFullYear(2019, 04, 12); 			//时间年月日
-            together.setHours(18);						//小时
-            together.setMinutes(0);					//分钟
-            together.setSeconds(0);					//秒前一位
-            together.setMilliseconds(2);				//秒第二位
+            together.setFullYear(2019, 04, 12); //时间年月日
+            together.setHours(18);		        //小时
+            together.setMinutes(0);				//分钟
+            together.setSeconds(0);				//秒前一位
+            together.setMilliseconds(2);		//秒第二位
 
             $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);

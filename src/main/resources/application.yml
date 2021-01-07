@@ -1,4 +1,4 @@
 server:
   port: 52013
   servlet:
-    context-path: love-tree
+    context-path: /love-tree
